@@ -10,3 +10,17 @@ Utilice un documento tipo .Rmd o .qmd y genere un reporte html. Estos dos docume
 La entrega debe contener los códigos para obtener las siguientes figuras:
 
 ![](images/Deber1.png)
+
+
+
+Réplica de la figura embebida
+
+![](imagenes/Deber2.png)
+
+**Códigos**
+
+Primer ejercicio
+
+```{r}
+
+```
