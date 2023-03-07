@@ -22,5 +22,10 @@ Réplica de la figura embebida
 Primer ejercicio
 
 ```{r}
+data (mtcars)
+mtcars$name = rownames(mtcars)
+mtcars$cyl = as.factor(mtcars$cyl)
 
+#Imagen A (barplot)
+p1 = ggbarplot(mtcars, x = "name", y = "mpg", fill = "cyl", color = "white", palette = "jco", sort.val = "asc", sort.by.groups = TRUE, x.text.angle = 90) + font("x.text", size = 8)
 ```
