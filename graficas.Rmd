@@ -28,4 +28,9 @@ mtcars$cyl = as.factor(mtcars$cyl)
 
 #Imagen A (barplot)
 p1 = ggbarplot(mtcars, x = "name", y = "mpg", fill = "cyl", color = "white", palette = "jco", sort.val = "asc", sort.by.groups = TRUE, x.text.angle = 90) + font("x.text", size = 8)
+
+#Imagen B (scatterplot)
+p2 = ggscatter(mtcars, x = "wt", y = "mpg", add = "reg.line", conf.int = TRUE, color = "cyl", palette = "jco", shape = "cyl") + stat_cor(aes(color = cyl), label.x.mpc = "centre", label.y.npc = "top")
+
+
 ```
