@@ -1,0 +1,12 @@
+---
+title: "Gráficas_AndrésCalderón"
+author: "Andrés Calderón"
+date: "2023-03-07"
+output: html_document
+---
+
+Utilice un documento tipo .Rmd o .qmd y genere un reporte html. Estos dos documentos (Rmd y html) guardelos con control de cambios en un repositorio de GitHub y **pegue solamente el enlace del repositorio** en esta entrega.
+
+La entrega debe contener los códigos para obtener las siguientes figuras:
+
+![](images/Deber1.png)
