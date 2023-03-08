@@ -44,7 +44,7 @@ p5 = ggdotplot(ToothGrowth, x = "dose", y = "len", color = "dose", palette = "np
 
 set.seed(42)
 n = 1000
-x = runif(n) + 3
+x = runif(n) * 3
 y = x * sin(1/x) + rnorm(n)/25
 
 df = data.frame(x = x, y = y)
@@ -56,5 +56,6 @@ multi1 = ggarrange(p1,
                    ggarrange(p3,
                              ggarrange(p6, p5, p2, p4, nrow = 2, ncol = 2, labels = c("B","C","D","E")), ncol = 2, labels = "F"),
                    nrow = 2, labels = "A")
+ggsave(filename = "multi1.pdf", height = 14, width = 14, plot = multi1, dpi = 300)
 multi1
 ```
