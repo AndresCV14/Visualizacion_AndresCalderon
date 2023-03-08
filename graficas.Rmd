@@ -32,5 +32,6 @@ p1 = ggbarplot(mtcars, x = "name", y = "mpg", fill = "cyl", color = "white", pal
 #Imagen B (scatterplot)
 p2 = ggscatter(mtcars, x = "wt", y = "mpg", add = "reg.line", conf.int = TRUE, color = "cyl", palette = "jco", shape = "cyl") + stat_cor(aes(color = cyl), label.x.mpc = "centre", label.y.npc = "top")
 
-
+#Imagen C (densityplot)
+p3 = ggplot(diamonds, aes(depth, fill = cut, colour = cut)) + geom_density(alpha = 0.2, na.rm = TRUE) + xlim(58, 68) + theme_classic() + theme(legend.position = "bottom")
 ```
