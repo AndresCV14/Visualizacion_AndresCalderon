@@ -34,4 +34,9 @@ p2 = ggscatter(mtcars, x = "wt", y = "mpg", add = "reg.line", conf.int = TRUE, c
 
 #Imagen C (densityplot)
 p3 = ggplot(diamonds, aes(depth, fill = cut, colour = cut)) + geom_density(alpha = 0.2, na.rm = TRUE) + xlim(58, 68) + theme_classic() + theme(legend.position = "bottom")
+
+#Imagen D (raster)
+p4 = ggplot(faithfuld, aes(eruptions, waiting)) + geom_raster(fill = density)) + theme_classic() + scale_fill_gradient(colours = heat.colors(10, rev = TRUE), na.value = "white")
+  
+ggarrange(p1, p2, p3, p4, labels = c("A", "B", "C", "D"), ncol = 2, nrow = 1, common.legend = TRUE, legend = "bottom")
 ```
